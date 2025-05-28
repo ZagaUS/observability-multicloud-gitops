@@ -29,8 +29,9 @@ spec:
     spec:
       volumes:
         - name: {{ .Chart.Name }}-pvc
-          persistentVolumeClaim:
-            claimName: {{ .Chart.Name }}-pvc
+          # persistentVolumeClaim:
+          #   claimName: {{ .Chart.Name }}-pvc
+          emptyDir: {}
       containers:
         - name: {{ .Chart.Name }}
           
