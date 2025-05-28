@@ -28,9 +28,12 @@ spec:
 
     spec:
       volumes:
-        - name: {{ .Chart.Name }}-pvc
-          persistentVolumeClaim:
-            claimName: {{ .Chart.Name }}-pvc
+        # remove pvc and use local storage
+        # - name: {{ .Chart.Name }}-pvc
+        #   persistentVolumeClaim:
+        #     claimName: {{ .Chart.Name }}-pvc
+        - name: data
+          emptyDir: {}
       containers:
         - name: {{ .Chart.Name }}
           
@@ -49,7 +52,7 @@ spec:
                 name: {{ .Chart.Name }}-secret
 
           volumeMounts:
-            - name: {{ .Chart.Name }}-pvc
+            - name: data
               mountPath: /var/lib/pgsql/data
 
 {{- end }}
