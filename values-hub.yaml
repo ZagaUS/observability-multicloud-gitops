@@ -115,7 +115,7 @@ clusterGroup:
       name: minio
       namespace: observability-datamesh
       project: observability-datamesh
-      path: charts\datamesh\minio
+      path: charts/datamesh/minio
     trino:
       name: trino
       namespace: observability-datamesh
