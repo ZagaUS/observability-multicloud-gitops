@@ -95,17 +95,17 @@ clusterGroup:
       name: apm
       namespace: observability-apm
       project: observability-apm
-      path: charts\apm
+      path: charts/apm
     otel-collector:
       name: otel-collector
       namespace: observability-otel
       project: observability-otel
-      path: charts\otel-collector
+      path: charts/otel-collector
     kafka:
       name: kafka
       namespace: observability-kafka
       project: observability-kafka
-      path: charts\kafka
+      path: charts/kafka
     hive-metastore:
       name: hive-metastore
       namespace: observability-datamesh
@@ -120,12 +120,12 @@ clusterGroup:
       name: trino
       namespace: observability-datamesh
       project: observability-datamesh
-      path: charts\datamesh\trino
+      path: charts/datamesh/trino
     case-management:
       name: case-management 
       namespace: observability-casemgt
       project: observability-casemgt
-      path: charts\case-management
+      path: charts/case-management
    
        
 
