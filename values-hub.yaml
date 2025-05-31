@@ -13,6 +13,7 @@ clusterGroup:
     - observability-testcase-app
     - observability-otel
     - openshift-opentelemetry-operator
+    - observability-kafka
   subscriptions:
     acm:
       name: advanced-cluster-management
