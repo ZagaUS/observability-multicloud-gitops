@@ -16,7 +16,7 @@ route:
 
 configmapEnv:
   data:
-    POSTGRES_HOST: casemanage-db.observability-edge.svc.cluster.local
+    POSTGRES_HOST: casemanage-db.observability-casemgt.svc.cluster.local
     POSTGRES_USER: casemanage
     POSTGRES_PASSWORD: casemanage123$
     POSTGRES_PORT: 5432
