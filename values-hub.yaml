@@ -21,7 +21,7 @@ clusterGroup:
       channel: release-2.11
       #csv: advanced-cluster-management.v2.6.1
     opentelemetry:
-      name: opentelemetry-product
+      name: opentelemetry-operator
       namespace: openshift-operators
       channel: stable
       #csv: advanced-cluster-management.v2.6.1
