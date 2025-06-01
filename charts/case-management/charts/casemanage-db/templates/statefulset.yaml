@@ -29,7 +29,7 @@ spec:
     spec:
       volumes:
         # remove pvc and use local storage
-        # - name: {{ .Chart.Name }}-pvc
+        - name: {{ .Chart.Name }}-pvc
         #   persistentVolumeClaim:
         #     claimName: {{ .Chart.Name }}-pvc
         - name: data
