@@ -52,3 +52,17 @@ zookeeper:
   storage:
     size: 5Gi
     type: persistent-claim
+  template:
+      pod:
+        affinity:
+          nodeAffinity:
+            requiredDuringSchedulingIgnoredDuringExecution:
+              nodeSelectorTerms:
+                - matchExpressions:
+                    - key: kubernetes.io/hostname
+                      operator: In
+                      values:
+                        - worker-node-01
+                        - worker-node-02
+                        - worker-node-03
+
