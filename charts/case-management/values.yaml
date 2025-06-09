@@ -30,7 +30,7 @@ casemgt-dashboard:
   replicaCount: 1
   image:
     repository: "quay.io/zagaos/zagaobserve-casemanage-dashboard"
-    tag: "v14"
+    tag: "v15"
     pullPolicy: IfNotPresent
   service:
     type: ClusterIP
